@@ -1,0 +1,107 @@
+@use "../abstracts";
+
+%flexItemCenter {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: var(--background-color);
+  padding: 30px 0;
+
+  @include abstracts.breakpoint(lg) {
+    padding-top: 26px 0;
+  }
+
+  @include abstracts.breakpoint(sm) {
+    padding-top: 22px 0;
+  }
+}
+
+.top-bar {
+  @extend %flexItemCenter;
+  justify-content: space-between;
+  min-width: 10vh;
+
+  &__more {
+    display: none;
+    background: var(--background-color);
+    border: var(--text-color);
+
+    @include abstracts.breakpoint(lg) {
+      display: block;
+    }
+  }
+}
+
+.logo {
+  @include abstracts.breakpoint(lg) {
+    margin-left: auto;
+  }
+
+  &__img {
+    @include abstracts.breakpoint(lg) {
+      width: 39px;
+    }
+  }
+}
+
+.navbar {
+  @include abstracts.breakpoint(lg) {
+    display: none;
+  }
+
+  &__list {
+    @extend %flexItemCenter;
+    gap: 3.4rem;
+  }
+
+  &__link {
+    color: var(--text-desc);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 162.5%;
+    text-decoration: none;
+    cursor: pointer;
+
+    &-active {
+      color: #fb8f2c;
+    }
+  }
+}
+
+.serve {
+  @extend %flexItemCenter;
+  gap: 3.4rem;
+
+  @include abstracts.breakpoint(lg) {
+    margin-left: 50px;
+  }
+
+  @include abstracts.breakpoint(sm) {
+    margin-left: 30px;
+  }
+
+
+  &__time,
+  &__book {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 162.5%;
+  }
+
+  &__time {
+    color: var(--text-desc);
+    text-decoration: none;
+
+    @include abstracts.breakpoint(lg) {
+      display: none;
+    }
+  }
+
+  &__book {
+    color: var(--text-color);
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+}

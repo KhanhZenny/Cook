@@ -1,0 +1,38 @@
+@use "../abstracts";
+
+.achieve-container {
+    padding: 70px 0 140px;
+    position: relative;
+}
+
+.achieve-inner {
+    top: 0;
+    &__img {
+        max-height: 194px;
+        width: 100%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+    }
+}
+
+.achieve-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+
+.achieve-item {
+    z-index: 1;
+    margin-top: 60px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    &__desc {
+        width: 148px;
+    }
+}

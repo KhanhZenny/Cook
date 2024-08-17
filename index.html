@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -22,6 +22,10 @@
         href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: Plus Jakarta Sans, sans-serif;
@@ -38,23 +42,612 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./Templates/header.html");
+    </script>
 
-    <div class="container">
-        <!-- Header -->
-        <header id="header"></header>
-        <script>
-            load("#header", "./Templates/header.html");
-        </script>
+    <main class="container-fluid home">
+        <div class="home__container container">
+            <div class="intro-home">
+                <section class="intro-inner">
+                    <p class="home__desc">Hi, new friend!</p>
+                    <h1 class="home__heading intro-inner__heading">We do not cook, we create your emotions!</h1>
+                    <p class="home__desc intro-inner__desc">There's evidence that cooking, like other creative
+                        practices, can
+                        boost
+                        well-being, self-esteem, and other measures of mental health.</p>
+                    <a href="#" class="home__desc intro-inner__link">
+                        Our menu
+                        <div class="home__separate"></div>
+                    </a>
+                </section>
+                <div class="intro-media">
+                    <div class="intro-media__card">
+                        <p class="home__medium">Price:$11</p>
+                    </div>
+                    <img src="./assets/img/intro/home-food1.png" alt="" class="intro-media__food">
+                    <div src="" alt="" class="intro-media__item">
+                        <img src="./assets/img/intro/home-food2.png" alt="" class="intro-media__meat">
+                        <img src="./assets/img/intro/home-food3.png" alt="" class="intro-media__meat1">
+                        <img src="./assets/img/intro/home-food4.png" alt="" class="intro-media__meat2">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Main -->
-        <h1>header page</h1>
+        <div class="home__container container-screen achieve-container">
+            <figure class="achieve-inner">
+                <img src="./assets/img/achieve/Rectangle 26.svg" alt="" class="achieve-inner__img">
+            </figure>
+            <div class="achieve-bottom ">
+                <div class="achieve-item">
+                    <h1 class="home__heading">06</h1>
+                    <p class="home__medium achieve-item__desc">Number Restaurant</p>
+                </div>
+                <div class=" achieve-item">
+                    <h1 class="home__heading">68</h1>
+                    <p class="home__medium achieve-item__desc">New Food Menu Dishes</p>
+                </div>
+                <div class=" achieve-item">
+                    <h1 class="home__heading">36</h1>
+                    <p class="home__medium achieve-item__desc">Years of experience</p>
+                </div>
+            </div>
+        </div>
 
-        <!-- footer -->
-        <footer id="footer">footer</footer>
-        <script>
-            load("#footer", "./Templates/header.html");
-        </script>
-    </div>
+        <div class="home__container container-screen popular-container">
+            <div class="popular-star">
+                <img src="./assets/icon/star.svg" alt="" class="popular-star__img">
+            </div>
+            <div class="container">
+                <div class="popular-inner">
+                    <h1 class="home__heading popular-inner__heading">Most popular food</h1>
+                    <p class="home__desc popular-inner__desc">A list of most popular Bangladeshi food including mains,
+                        drinks, and deserts
+                        you must try while in Bangladesh, for an authentic experience. Check now!</p>
+                    <div class="row row-cols-3">
+                        <div class="col">
+                            <article class="popular-cart">
+                                <div class="popular-cart__img">
+                                    <a href="">
+                                        <img src="./assets/img/popular/popular 1.svg" alt=""
+                                            class="popular-cart__thumb">
+                                    </a>
+                                </div>
+                                <div class="popular-content">
+                                    <h2 class="home__medium popular-content__main">Schezwan Noodles</h2>
+                                    <h2 class="home__medium popular-content__card">$49</h2>
+                                </div>
+                                <p class="home__desc">Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                                <div class="popular-bottom">
+                                    <a href="" class="home__desc popular-bottom__desc">
+                                        Order Now
+                                        <div class="home__separate"></div>
+                                    </a>
+                                    <div class="popular-bottom__img">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="popular-cart">
+                                <div class="popular-cart__img">
+                                    <a href="">
+                                        <img src="./assets/img/popular/popular 2.svg" alt=""
+                                            class="popular-cart__thumb">
+                                    </a>
+                                </div>
+                                <div class="popular-content">
+                                    <h2 class="home__medium popular-content__main">Schezwan Noodles</h2>
+                                    <h2 class="home__medium popular-content__card">$49</h2>
+                                </div>
+                                <p class="home__desc">Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                                <div class="popular-bottom">
+                                    <a href="" class="home__desc popular-bottom__desc">
+                                        Order Now
+                                        <div class="home__separate"></div>
+                                    </a>
+                                    <div class="popular-bottom__img">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small1.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="popular-cart">
+                                <div class="popular-cart__img">
+                                    <a href="">
+                                        <img src="./assets/img/popular/popular 3.svg" alt=""
+                                            class="popular-cart__thumb">
+                                    </a>
+                                </div>
+                                <div class="popular-content">
+                                    <h2 class="home__medium popular-content__main">Schezwan Noodles</h2>
+                                    <h2 class="home__medium popular-content__card">$49</h2>
+                                </div>
+                                <p class="home__desc">Fresh toasted sourdough bread with olive oil and pomegranate.</p>
+                                <div class="popular-bottom">
+                                    <a href="" class="home__desc popular-bottom__desc">
+                                        Order Now
+                                        <div class="home__separate"></div>
+                                    </a>
+                                    <div class="popular-bottom__img">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                        <img src="./assets/icon/star-small1.svg" alt=""
+                                            class="popular-bottom__img__star">
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+
+                    <a class="popular-more">
+                        <div class="home__link popular-more__thumb">
+                            Explore All Food
+                            <img src="./assets/icon/left.svg" alt="" class="popular-more__img">
+                        </div>
+                        <div class="home__separate"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__container address-container">
+            <div class="container address-content">
+                <div class="address-left">
+                    <div class="address-left__content">
+                        <h2 class="home__medium address-left__heading">Find us gere</h2>
+                        <p class="home__desc address-left__inform">Avenue Marina 34568 NY (U.S)
+                            +0123 456 7890
+                            hellouihut@gmail.com</p>
+                    </div>
+                </div>
+                <div class="address-right">
+                    <div class="address-right__inner">
+                        <h2 class="home__medium address-right__heading">Opening Times</h2>
+                        <div class="address-right__time">
+                            <p class="home__desc address-right__desc">Mon</p>
+                            <p class="home__desc address-right__desc">17:00 to 23:00</p>
+                        </div>
+                        <div class="address-right__time">
+                            <p class="home__desc address-right__desc">Wed</p>
+                            <p class="home__desc address-right__desc">19:00 to 24:00</p>
+                        </div>
+                        <div class="address-right__time">
+                            <p class="home__desc address-right__desc">Thu</p>
+                            <p class="home__desc address-right__desc">14:00 to 18:00</p>
+                        </div>
+                        <div class="address-right__time">
+                            <p class="home__desc address-right__desc">Fri</p>
+                            <p class="home__desc address-right__desc">16:00 to 24:00</p>
+                        </div>
+                        <div class="address-right__time">
+                            <p class="home__desc address-right__desc">Sat/Sun</p>
+                            <p class="home__desc address-right__desc">20:00 to 4:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__container menu-container">
+            <div class="container menu-home">
+                <div class="menu-inner">
+                    <p class="home__desc ">Our menu</p>
+                    <h1 class="home__heading menu-inner__heading">Choose & Taste What You Like</h1>
+                    <p class="home__desc menu-inner__desc">A list of top Bangladeshi food including mains, drinks, and
+                        deserts you must try while in Bangladesh, for an authentic experience. Check now!</p>
+                    <div class="menu-sidebar">
+                        <ul class="menu-sidebar__list">
+                            <li>
+                                <a href="" class="home__sidebar home__sidebar__active">All</a>
+                                <div class="home__separate"></div>
+                            </li>
+                            <li>
+                                <a href="" class="home__sidebar">Appetizer</a>
+                            </li>
+                            <li>
+                                <a href="" class="home__sidebar">Soup</a>
+                            </li>
+                            <li>
+                                <a href="" class="home__sidebar">Dessert</a>
+                            </li>
+                            <li>
+                                <a href="" class="home__sidebar">Drinks</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-inner__separate"></div>
+                    <div class="menu-bottom">
+                        <div class="row row-cols-2">
+                            <div class="col menu-col">
+                                <div class="menu-food">
+                                    <img src="./assets/img/menu-food/menu-food1.svg" alt="" class="menu-food__img">
+                                    <p class="home__sidebar menu-food__name">Chawli Beans and Mint Burger</p>
+                                </div>
+                                <p class="home__sidebar menu-food__price">$11</p>
+                            </div>
+                            <div class="col menu-col">
+                                <div class="menu-food">
+                                    <img src="./assets/img/menu-food/menu-food2.svg" alt="" class="menu-food__img">
+                                    <p class="home__sidebar menu-food__name">Raw Chicken Fillet Garlic</p>
+                                </div>
+                                <p class="home__sidebar menu-food__price">$25</p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col menu-col">
+                                <div class="menu-food">
+                                    <img src="./assets/img/menu-food/menu-food3.svg" alt="" class="menu-food__img">
+                                    <p class="home__sidebar menu-food__name">American Chopsuey, Jain Recipe</p>
+                                </div>
+                                <p class="home__sidebar menu-food__price">$16</p>
+                            </div>
+                            <div class="col menu-col">
+                                <div class="menu-food">
+                                    <img src="./assets/img/menu-food/menu-food4.svg" alt="" class="menu-food__img">
+                                    <p class="home__sidebar menu-food__name">Makai Shorba, Thick Corn Soup</p>
+                                </div>
+                                <p class="home__sidebar menu-food__price">$14</p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col menu-col">
+                                <div class="menu-food">
+                                    <img src="./assets/img/menu-food/menu-food5.svg" alt="" class="menu-food__img">
+                                    <p class="home__sidebar menu-food__name">Paneer Nuggets, Quick Paneer Deep-fried</p>
+                                </div>
+                                <p class="home__sidebar menu-food__price">$15</p>
+                            </div>
+                            <div class="col menu-col">
+                                <div class="menu-food">
+                                    <img src="./assets/img/menu-food/menu-food6.svg" alt="" class="menu-food__img">
+                                    <p class="home__sidebar menu-food__name">Healthy Salmon Power Bowl</p>
+                                </div>
+                                <p class="home__sidebar menu-food__price">$09</p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col menu-col">
+                                <div class="menu-food">
+                                    <img src="./assets/img/menu-food/menu-food7.svg" alt="" class="menu-food__img">
+                                    <p class="home__sidebar menu-food__name">Stir Fried Mixed Vegetables in Butter</p>
+                                </div>
+                                <p class="home__sidebar menu-food__price">$23</p>
+                            </div>
+                            <div class="col menu-col">
+                                <div class="menu-food">
+                                    <img src="./assets/img/menu-food/menu-food8.svg" alt="" class="menu-food__img">
+                                    <p class="home__sidebar menu-food__name">Paneer N Cheese Roll ( Wraps and Rolls)</p>
+                                </div>
+                                <p class="home__sidebar menu-food__price">$10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__container service-container">
+            <div class="container">
+                <div class="service-top">
+                    <h1 class="home__heading">Visit Our Restaurant</h1>
+                    <p class="home__desc service-top__desc">Quality country-style menu selection, friendly and efficient
+                        service, combined
+                        with genuine value has kept Our Best serving families like yours for over 28.</p>
+                </div>
+                <div class="service-thumb">
+                    <div class="row row-cols-3">
+                        <div class="col service-col">
+                            <figure>
+                                <img src="./assets/img/service/service1.svg" alt="">
+                            </figure>
+
+                            <figure>
+                                <img src="./assets/img/service/service2.svg" alt="">
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure>
+                                <img src="./assets/img/service/service3.svg" alt="">>
+                            </figure>
+                        </div>
+                        <div class="col service-col">
+                            <figure>
+                                <img src="./assets/img/service/service4.svg" alt="">
+                            </figure>
+
+                            <figure>
+                                <img src="./assets/img/service/service5.svg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__container container-screen book-container">
+            <div class="container book-main">
+                <div class="book-inner">
+                    <img src="./assets/img/book/book-icon.svg" alt="" class="book-icon">
+                    <div class="book-content">
+                        <h2 class="home__high">Reserve ! Book Now</h2>
+                        <div class="book-middle">
+                            <div class="book-date">
+                                <p class="home__medium book-date__heading">Set date</p>
+                                <div class="book-time">
+                                    <b class="home__high">21</b>
+                                    <div class="book-left">
+                                        <p class="book-left__month">Sep</p>
+                                        <img src="./assets/icon/icon-bottom.svg" alt="" class="book-left__icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-date">
+                                <p class="home__medium book-date__heading">Guests</p>
+                                <div class="book-time">
+                                    <b class="home__high">2</b>
+                                    <div class="book-left">
+                                        <img src="./assets/icon/icon-top.svg" alt="">
+                                        <img src="./assets/icon/icon-bottom.svg" alt="" class="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn book-btn">Book now</a>
+                    </div>
+                    <div class="book-right">
+                        <figure class="book-right__thumb">
+                            <img src="./assets/img/book/book-thumb.svg" alt="">
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__container offer-container">
+            <div class="container offer-inner">
+                <h1 class="home__heading offer-inner__content">Our Daily Offers</h1>
+                <div class="offer-content">
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <div class="offer-left">
+                                <div class="offer-left__thumb">
+                                    <a href="#!" class="offer-left__link">
+                                        <picture>
+                                            <!-- <source media="(max-width: 767.98px)" srcset=""> -->
+                                            <img src="./assets/img/Thumb/thumb-offer.svg" alt=""
+                                                class="offer-left__img">
+                                        </picture>
+                                    </a>
+                                </div>
+
+
+                                <div class="offer-left__content">
+                                    <h3 class="offer-left__content--heading">Lunch Time</h3>
+                                    <div class="offer-left__middle">
+                                        <i class="offer-left__middle--content">30%</i>
+                                        <p class="offer-left__middle--desc">off</p>
+                                    </div>
+                                    <p class="home__desc offer-left__content__desc">We love food, lots of different and
+                                        food, just
+                                        like you.</p>
+                                    <a href="#!" class="btn offer-btn">Order Now</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col">
+                            <div class="offer-right">
+                                <div class="offer-item">
+                                    <a href="">
+                                        <img src="./assets/img/offer/offer 1.svg" alt="" class="offer-item__img">
+                                    </a>
+                                    <div class="offer-item__inner">
+                                        <div class="offer-item__content">
+                                            <h3 class="home__medium offer-item__content--heading">Spicy Club</h3>
+                                            <p class="home__desc offer-item__content--desc">Pork, chcken and vegetable
+                                                fried rolls
+                                                served with lettuce wraps</p>
+                                        </div>
+                                    </div>
+                                    <p class="home__sidebar offer-item__card">$42</p>
+                                </div>
+                                <div class="offer-item">
+                                    <a href="">
+                                        <img src="./assets/img/offer/offer 2.svg" alt="" class="offer-item__img">
+                                    </a>
+                                    <div class="offer-item__inner">
+                                        <div class="offer-item__content">
+                                            <h3 class="home__medium offer-item__content--heading">Almond baked Brie</h3>
+                                            <p class="home__desc offer-item__content--desc">Pork, chcken and vegetable
+                                                fried rolls served with lettuce wraps</p>
+                                        </div>
+                                    </div>
+                                    <p class="home__sidebar offer-item__card">$38</p>
+                                </div>
+                                <div class="offer-item">
+                                    <a href="">
+                                        <img src="./assets/img/offer/offer 3.svg" alt="" class="offer-item__img">
+                                    </a>
+                                    <div class="offer-item__inner">
+                                        <div class="offer-item__content">
+                                            <h3 class="home__medium offer-item__content--heading">Tuscan Flatbread</h3>
+                                            <p class="home__desc offer-item__content--desc">Pork, chcken and vegetable
+                                                fried rolls
+                                                served with lettuce wraps</p>
+                                        </div>
+                                    </div>
+                                    <p class="home__sidebar offer-item__card">$49</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__container container-screen ">
+            <div class="slide-container">
+                <div class="slide-inner">
+                    <div class="slide-item">
+                        <div>
+                            <img src="./assets/img/Slide/slide 1.svg" alt="" class="slide-item__img">
+                        </div>
+                        <h3 class="slide-item__name">Super Taste</h3>
+                    </div>
+                    <div class="slide-item">
+                        <div>
+                            <img src="./assets/img/Slide/slide 2.svg" alt="" class="slide-item__img">
+                        </div>
+                        <h3 class="slide-item__name">Self Services</h3>
+                    </div>
+                    <div class="slide-item">
+                        <div>
+                            <img src="./assets/img/Slide/slide 3.svg" alt="" class="slide-item__img">
+                        </div>
+                        <h3 class="slide-item__name">Best Food</h3>
+                    </div>
+                    <div class="slide-item">
+                        <div>
+                            <img src="./assets/img/Slide/slide 4.svg" alt="" class="slide-item__img">
+                        </div>
+                        <h3 class="slide-item__name">Fast Delivery</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__container profile-container">
+            <div class="container">
+                <div class="profile-inner">
+                    <img src="./assets/icon/star-profile.svg" alt="" class="profile-inner__icon">
+                    <h1 class="home__heading profile-inner__heading">They will cook for you</h1>
+                    <p class="home__desc profile-inner__desc">Our Diners can enjoy cooking for themselves, or visiting a
+                        curated selection of restaurants in the area. They will cook for you and make sure you have a
+                        home away from home at all times.</p>
+                    <div class="row row-cols-3">
+                        <div class="col">
+                            <img src="./assets/img/Chef/chef 1.svg" alt="" class="profile-inner__img">
+                            <h3 class="home__medium profile-inner__name">Jubed Ahmed</h3>
+                            <p class="profile-inner__job">Chef</p>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/img/Chef/chef 2.svg" alt="" class="profile-inner__img">
+                            <h3 class="home__medium profile-inner__name">Delwar hussen</h3>
+                            <p class="profile-inner__job">Assisten chef</p>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/img/Chef/chef 3.svg" alt="" class="profile-inner__img">
+                            <h3 class="home__medium profile-inner__name">Tajul Islam</h3>
+                            <p class="profile-inner__job">Chef</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__container blog-container">
+            <div class="container">
+                <div class="blog-inner">
+                    <div class="blog-top">
+                        <p class="home__desc">Our blog</p>
+                        <h1 class="home__heading blog-top__heading">Recent Articles</h1>
+                    </div>
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <img src="./assets/img/Blog/blog 1.svg" alt="" class="blog-right__thumb">
+                        </div>
+                        <div class="col">
+                            <p class="home__desc">August 6, 2022</p>
+                            <h3 class="home__sidebar blog-right__heading">The Most Expensive Cup of Coffee in the Usa
+                            </h3>
+                            <p class="blog-right__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque lauatium, totam rem aperiam perspiciatis unde omnis.</p>
+                            <div class="blog-right__more">
+                                <p class="home__desc blog-right__more--comment">Comments 165</p>
+                                <p class="home__desc blog-right__more--view">View 1265</p>
+                            </div>
+                            <a href="" class="home__desc blog-link">
+                                Read Now
+                                <div class="home__separate"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <p class="home__desc">August 6, 2022</p>
+                            <h3 class="home__sidebar blog-right__heading">Chicken Soup With Spring Veggies Aand Pasta
+                            </h3>
+                            <p class="blog-right__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque lauatium, totam rem aperiam perspiciatis unde omnis.</p>
+                            <div class="blog-right__more">
+                                <p class="home__desc blog-right__more--comment">Comments 165</p>
+                                <p class="home__desc blog-right__more--view">View 1265</p>
+                            </div>
+                            <a href="" class="home__desc blog-link">
+                                Read Now
+                                <div class="home__separate"></div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/img/Blog/blog 2.svg" alt="" class="blog-right__thumb">
+                        </div>
+                    </div>
+                    <a class="blog-more">
+                        <div class="home__link blog-more__link">
+                            Explore All Blogs
+                            <img src="./assets/icon/left.svg" alt="">
+                        </div>
+                        <div class="home__separate"></div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">footer</footer>
+    <script>
+        load("#footer", "./Templates/footer.html");
+    </script>
 </body>
 
 </html>

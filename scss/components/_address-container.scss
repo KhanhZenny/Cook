@@ -1,0 +1,60 @@
+.address-container {
+  margin: 48px 0 26px;
+}
+
+.address-content {
+  display: flex;
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+.address-left,
+.address-right {
+  flex: 1;
+}
+
+.address-left {
+  background-image: url("http://127.0.0.1:5500/assets/img/achieve/Rectangle%2076.svg");
+  min-height: 360px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+
+  &__content {
+    margin: 119px 179px;
+  }
+
+  &__heading,
+  &__inform {
+    text-align: center;
+  }
+
+  &__inform {
+    margin-top: 10px;
+  }
+}
+
+.address-right {
+  background: #fb8f2c;
+
+  &__inner {
+    margin: 73px 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__heading {
+    margin: 0 auto;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading,
+  &__desc {
+    color: #111114 !important;
+  }
+}

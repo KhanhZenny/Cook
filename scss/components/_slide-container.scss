@@ -1,0 +1,27 @@
+.slide-container {
+  margin-top: 81px;
+  padding-bottom: 150px;
+}
+
+.slide-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fb8f2c;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.slide-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  &__name {
+    font-family: Libre Bodoni;
+    font-size: 3.8rem;
+    font-weight: 500;
+    line-height: 110.526%;
+    color: #111114;
+  }
+}

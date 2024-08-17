@@ -1,0 +1,70 @@
+.intro-home {
+  display: grid;
+  grid-template-columns: 5.8fr 4.2fr;
+  align-items: center;
+}
+
+.intro-inner {
+  &__heading {
+    margin: 10px 0 20px;
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    color: #fb8f2c !important;
+    display: inline-block;
+  }
+}
+
+.intro-media {
+  position: relative;
+
+
+  &__food {
+    width: 370px;
+    height: 436px;
+    display: block;
+    object-fit: contain;
+  }
+
+//   &__item {
+//     --grid-gutter-y: 30px;
+//   }
+
+  &__meat,
+  &__meat1,
+  &__meat2   {
+    width: 80px;
+    height: 83px;
+    display: block;
+    object-fit: contain;
+    position: absolute;
+  }
+
+  &__meat {
+    right: 20px;
+    top: 72px;
+  }
+
+  &__meat1 {
+    right: 0;
+    top: 185px;
+  }
+
+  &__meat2 {
+    right: 20px;
+    top: 294px;
+  }
+
+  &__card {
+    position: absolute;
+    padding: 12px 16px 8px 16px;
+    background: #fb8f2c;
+    bottom: 66px;
+    left: 0;
+    border-radius: 16px;
+  }
+}
