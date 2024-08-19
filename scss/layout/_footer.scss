@@ -1,0 +1,68 @@
+@use "../abstracts";
+
+%FlexItemCenter {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  padding: 150px 0 50px;
+  background: var(--background-color);
+
+  &__row {
+    display: grid;
+    grid-template-columns: 2.24fr 0.92fr 1.68fr 0.76fr 1.75fr;
+    gap: 77px;
+
+    @include abstracts.screen(xl) {
+      grid-template-columns: 2.20fr 0.92fr 1.68fr 0.76fr 1.70fr;
+      gap: 50px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    &--heading {
+      color: var(--text-color);
+    }
+  }
+
+  &__desc {
+    margin: 76px 0 18px;
+  }
+
+  &__app {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    &--link {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--text-color);
+  }
+
+  &__list {
+    margin-top: 24px;
+  }
+
+  &__link {
+    padding: 8px 0;
+    display: inline-block;
+
+    &:hover {
+      color: #fb8f2c;
+    }
+  }
+}

@@ -29,6 +29,10 @@
     font-weight: 500;
     line-height: 115.625%;
     text-transform: capitalize;
+
+    @include abstracts.screen(xl) {
+      font-size: 6rem;
+    }
   }
 
   &__medium {
@@ -38,6 +42,10 @@
     font-weight: 500;
     line-height: 141.667%;
     text-transform: capitalize;
+
+    @include abstracts.screen(xl) {
+      font-size: 2rem;
+    }
   }
 
   &__separate {
@@ -53,6 +61,10 @@
     font-size: 4rem;
     font-weight: 500;
     line-height: 125%;
+
+    @include abstracts.screen(xl) {
+      font-size: 3.6rem;
+    }
   }
 
   &__sidebar {
@@ -61,6 +73,10 @@
     font-weight: 500;
     line-height: 133.333%;
     color: var(--text-desc);
+
+    @include abstracts.screen(xl) {
+      font-size: 2.4rem;
+    }
 
     &__active {
       color: #fb8f2c;

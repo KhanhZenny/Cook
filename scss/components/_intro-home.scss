@@ -1,7 +1,14 @@
+@use "../abstracts";
+
 .intro-home {
   display: grid;
   grid-template-columns: 5.8fr 4.2fr;
   align-items: center;
+
+  @include abstracts.screen(xxl) {
+    // display: grid;
+    grid-template-columns: 5.2fr 4.5fr;
+  }
 }
 
 .intro-inner {
@@ -26,7 +33,7 @@
   &__food {
     width: 370px;
     height: 436px;
-    display: block;
+    // display: block;
     object-fit: contain;
   }
 

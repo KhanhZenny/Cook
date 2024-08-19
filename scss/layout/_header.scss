@@ -9,11 +9,11 @@
   background: var(--background-color);
   padding: 30px 0;
 
-  @include abstracts.breakpoint(lg) {
+  @include abstracts.screen(lg) {
     padding-top: 26px 0;
   }
 
-  @include abstracts.breakpoint(sm) {
+  @include abstracts.screen(sm) {
     padding-top: 22px 0;
   }
 }
@@ -28,26 +28,26 @@
     background: var(--background-color);
     border: var(--text-color);
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
       display: block;
     }
   }
 }
 
 .logo {
-  @include abstracts.breakpoint(lg) {
+  @include abstracts.screen(lg) {
     margin-left: auto;
   }
 
   &__img {
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
       width: 39px;
     }
   }
 }
 
 .navbar {
-  @include abstracts.breakpoint(lg) {
+  @include abstracts.screen(lg) {
     display: none;
   }
 
@@ -74,14 +74,13 @@
   @extend %flexItemCenter;
   gap: 3.4rem;
 
-  @include abstracts.breakpoint(lg) {
+  @include abstracts.screen(lg) {
     margin-left: 50px;
   }
 
-  @include abstracts.breakpoint(sm) {
+  @include abstracts.screen(sm) {
     margin-left: 30px;
   }
-
 
   &__time,
   &__book {
@@ -94,7 +93,7 @@
     color: var(--text-desc);
     text-decoration: none;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
       display: none;
     }
   }

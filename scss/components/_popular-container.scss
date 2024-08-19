@@ -1,14 +1,29 @@
+@use "../abstracts";
+
 .popular-container {
-  position: relative;
+  margin-top: 48px;
 }
 
 .popular-star {
   position: absolute;
   top: 76px;
+  left: -101px;
+
+  @include abstracts.screen(xxl) {
+    left: -35px;
+  }
 }
 
 .popular-inner {
   padding: 48px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.popular-top {
+  
 
   &__heading {
     text-align: center;
@@ -17,7 +32,7 @@
   &__desc {
     text-align: center;
     width: 601px;
-    margin: 20px auto 60px;
+    margin: 20px auto 0;
   }
 }
 
@@ -53,14 +68,13 @@
 }
 
 .popular-more {
-  text-align: center;
-  margin: 30px 0 auto;
+  margin: 0 auto;
   display: inline-block;
 
-  &__thumb {
+  &__link {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 16px;
   }
 }

@@ -1,36 +1,45 @@
 @use "../abstracts";
 
 .achieve-container {
-    padding: 70px 0 140px;
+    padding: 70px 0;
     position: relative;
 }
 
 .achieve-inner {
-    top: 0;
+    width: 100%;
+    flex-shrink: 0;
+
     &__img {
-        max-height: 194px;
         width: 100%;
-        object-fit: contain;
-        background-repeat: no-repeat;
-        display: block;
-        position: absolute;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
 .achieve-bottom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 130px;
+    @include abstracts.screen(xl) {
+        gap: 80px;
+    }
 }
 
 .achieve-item {
-    z-index: 1;
-    margin-top: 60px;
     justify-content: center;
     display: flex;
     align-items: center;
     gap: 18px;
+
+    @include abstracts.screen(xl) {
+        gap: 15px;
+    }
 
     &__desc {
         width: 148px;

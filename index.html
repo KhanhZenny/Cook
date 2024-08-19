@@ -48,7 +48,7 @@
         load("#header", "./Templates/header.html");
     </script>
 
-    <main class="container-fluid home">
+    <main class="container home">
         <div class="home__container container">
             <div class="intro-home">
                 <section class="intro-inner">
@@ -77,10 +77,10 @@
             </div>
         </div>
 
-        <div class="home__container container-screen achieve-container">
-            <figure class="achieve-inner">
-                <img src="./assets/img/achieve/Rectangle 26.svg" alt="" class="achieve-inner__img">
-            </figure>
+        <div class="home__container achieve-container">
+            <div class="achieve-inner">
+                <img src="./assets/img/Thumb/contact-thumb.svg" alt="" class="achieve-inner__img">
+            </div>
             <div class="achieve-bottom ">
                 <div class="achieve-item">
                     <h1 class="home__heading">06</h1>
@@ -97,16 +97,18 @@
             </div>
         </div>
 
-        <div class="home__container container-screen popular-container">
-            <div class="popular-star">
-                <img src="./assets/icon/star.svg" alt="" class="popular-star__img">
-            </div>
+        <div class="home__container  popular-container">
             <div class="container">
                 <div class="popular-inner">
-                    <h1 class="home__heading popular-inner__heading">Most popular food</h1>
-                    <p class="home__desc popular-inner__desc">A list of most popular Bangladeshi food including mains,
-                        drinks, and deserts
-                        you must try while in Bangladesh, for an authentic experience. Check now!</p>
+                    <div class="popular-star">
+                        <img src="./assets/icon/star.svg" alt="" class="popular-star__img">
+                    </div>
+                    <div class="popular-top">
+                        <h1 class="home__heading popular-top__heading">Most popular food</h1>
+                        <p class="home__desc popular-top__desc">A list of most popular Bangladeshi food including mains,
+                            drinks, and deserts
+                            you must try while in Bangladesh, for an authentic experience. Check now!</p>
+                    </div>
                     <div class="row row-cols-3">
                         <div class="col">
                             <article class="popular-cart">
@@ -212,13 +214,21 @@
                         </div>
                     </div>
 
-                    <a class="popular-more">
-                        <div class="home__link popular-more__thumb">
-                            Explore All Food
-                            <img src="./assets/icon/left.svg" alt="" class="popular-more__img">
+                    <a href="" class="popular-more">
+                        <div class="popular-more__link">
+                            <p class="home__link">Explore All Food</p>
+                            <img src="./assets/icon/left.svg" alt="">
                         </div>
                         <div class="home__separate"></div>
                     </a>
+
+                    <!-- <a href="" class="blog-more">
+                        <div class="blog-more__link">
+                            <p class="home__link">Explore All Food</p>
+                            <img src="./assets/icon/left.svg" alt="">
+                        </div>
+                        <div class="home__separate"></div>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -226,6 +236,9 @@
         <div class="home__container address-container">
             <div class="container address-content">
                 <div class="address-left">
+                    <div class="address-left__thumb">
+                        <img src="./assets/img/adress/adress 1.svg" alt="" class="address-left__img">
+                    </div>
                     <div class="address-left__content">
                         <h2 class="home__medium address-left__heading">Find us gere</h2>
                         <p class="home__desc address-left__inform">Avenue Marina 34568 NY (U.S)
@@ -369,36 +382,29 @@
                 </div>
                 <div class="service-thumb">
                     <div class="row row-cols-3">
-                        <div class="col service-col">
-                            <figure>
-                                <img src="./assets/img/service/service1.svg" alt="">
-                            </figure>
-
-                            <figure>
-                                <img src="./assets/img/service/service2.svg" alt="">
-                            </figure>
+                        <div class="col">
+                            <div class="service-col">
+                                <img src="./assets/img/service/service1.svg" alt="" class="service-col__img">
+                                <img src="./assets/img/service/service2.svg" alt="" class="service-col__img">
+                            </div>
                         </div>
                         <div class="col">
-                            <figure>
-                                <img src="./assets/img/service/service3.svg" alt="">>
-                            </figure>
+                            <div class="service-row">
+                                <img src="./assets/img/service/service3.svg" alt="" class="service-col__img">>
+                            </div>
                         </div>
-                        <div class="col service-col">
-                            <figure>
-                                <img src="./assets/img/service/service4.svg" alt="">
-                            </figure>
-
-                            <figure>
-                                <img src="./assets/img/service/service5.svg" alt="">
-                            </figure>
-
+                        <div class="col ">
+                            <div class="service-col">
+                                <img src="./assets/img/service/service4.svg" alt="" class="service-col__img">
+                                <img src="./assets/img/service/service5.svg" alt="" class="service-col__img">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="home__container container-screen book-container">
+        <div class="home__container book-container">
             <div class="container book-main">
                 <div class="book-inner">
                     <img src="./assets/img/book/book-icon.svg" alt="" class="book-icon">
@@ -429,10 +435,7 @@
                         <a href="" class="btn book-btn">Book now</a>
                     </div>
                     <div class="book-right">
-                        <figure class="book-right__thumb">
-                            <img src="./assets/img/book/book-thumb.svg" alt="">
-                        </figure>
-
+                        <img src="./assets/img/book/book-thumb.svg" alt="" class="book-right__img">
                     </div>
                 </div>
             </div>
@@ -446,13 +449,7 @@
                         <div class="col">
                             <div class="offer-left">
                                 <div class="offer-left__thumb">
-                                    <a href="#!" class="offer-left__link">
-                                        <picture>
-                                            <!-- <source media="(max-width: 767.98px)" srcset=""> -->
-                                            <img src="./assets/img/Thumb/thumb-offer.svg" alt=""
-                                                class="offer-left__img">
-                                        </picture>
-                                    </a>
+                                    <img src="./assets/img/Thumb/thumb-offer.svg" alt="" class="offer-left__img">
                                 </div>
 
 
@@ -521,7 +518,7 @@
             </div>
         </div>
 
-        <div class="home__container container-screen ">
+        <div class="home__container container-fluid ">
             <div class="slide-container">
                 <div class="slide-inner">
                     <div class="slide-item">
@@ -628,15 +625,39 @@
                             <img src="./assets/img/Blog/blog 2.svg" alt="" class="blog-right__thumb">
                         </div>
                     </div>
-                    <a class="blog-more">
+                    <a href="" class="blog-more">
+                        <div class="blog-more__link">
+                            <p class="home__link">Explore All Food</p>
+                            <img src="./assets/icon/left.svg" alt="">
+                        </div>
+                        <div class="home__separate"></div>
+                    </a>
+                    <!-- <a href="" class="blog-more">
                         <div class="home__link blog-more__link">
                             Explore All Blogs
                             <img src="./assets/icon/left.svg" alt="">
                         </div>
                         <div class="home__separate"></div>
-                    </a>
+                    </a> -->
+                </div>
+            </div>
+        </div>
 
-
+        <div class="home__container contact-container">
+            <div class="contact-thumb">
+                <img src="./assets/img/Thumb/contact-thumb.svg" alt="" class="contact-thumb__img">
+            </div>
+            <div class="contact-inner">
+                <div class="contact-left">
+                    <h2 class="home__high contact-left__heading">Newsletter</h2>
+                    <p class="home__desc contact-left__desc">Subscribe to our newsletter and receive 15% discount
+                        from your order.</p>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-right__input">
+                        <input type="" placeholder="Enter your email address" class="contact-right__input--email">
+                        <img src="./assets/icon/contact-left.svg" alt="" class="contact-right__input--icon">
+                    </form>
                 </div>
             </div>
         </div>
@@ -644,7 +665,7 @@
     </main>
 
     <!-- footer -->
-    <footer id="footer">footer</footer>
+    <footer id="footer" class="footer">footer</footer>
     <script>
         load("#footer", "./Templates/footer.html");
     </script>

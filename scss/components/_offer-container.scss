@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .offer-container {
   margin-top: 46px;
 }
@@ -11,11 +13,18 @@
   }
 }
 
+
+
 .offer-left {
   position: relative;
+  height: 100%;
+  object-fit: cover;
+
+  @include abstracts.screen(lg) {
+    // max-width: 339px;
+  }
 
   &__thumb {
-    width: 100%;
     height: 100%;
     flex-shrink: 0;
   }
@@ -82,13 +91,20 @@
   display: flex;
   flex-direction: column;
   gap: 36px;
+
+  @include abstracts.screen(xxl) {
+    gap: 25px;
+  }
 }
 
 .offer-item {
   display: flex;
-  // align-items: center;
   justify-content: space-between;
   gap: 31px;
+
+  @include abstracts.screen(xl) {
+    gap: 22px;
+  }
 
   &__img {
     border-radius: 50%;
@@ -99,10 +115,19 @@
 
     &--heading {
       margin: 11px 0 16px;
+
+      @include abstracts.screen(xl) {
+        margin-bottom: 11px;
+        margin-top: 0;
+      }
     }
   }
 
   &__card {
     margin-top: 8px;
+
+    @include abstracts.screen(xl) {
+      margin-top: 0;
+    }
   }
 }
