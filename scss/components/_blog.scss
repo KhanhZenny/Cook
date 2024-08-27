@@ -1,12 +1,42 @@
+@use "../abstracts";
+
 .blog-container {
   margin-top: 56px;
   padding-bottom: 56px;
+
+  @include abstracts.screen(sm) {
+    margin-top: 40px;
+  }
 }
 
 .blog-inner {
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @include abstracts.screen(xl) {
+    gap: 40px;
+  }
+  
+  @include abstracts.screen(lg) {
+    gap: 50px;
+  } 
+
+  @include abstracts.screen(md) {
+    gap: 3  0px;
+  } 
+}
+
+.blog-gap {
+  @include abstracts.screen(lg) {
+    gap: 30px;
+  }
+
+  &__bottom {
+    @include abstracts.screen(lg) {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .blog-top {
@@ -22,6 +52,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 40px;
   }
 
   &__heading {
@@ -34,6 +65,10 @@
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 155.556%;
+
+    @include abstracts.screen(sm) {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -42,6 +77,10 @@
   gap: 111px;
   display: flex;
   align-items: center;
+
+  @include abstracts.screen(lg) {
+    margin-bottom: 60px;
+  }
 }
 
 .blog-link {

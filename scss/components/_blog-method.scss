@@ -1,0 +1,51 @@
+@use "../abstracts";
+
+.method__blog {
+    margin-top: 150px;
+}
+
+.method__inner {
+    padding: 27px 0;
+    display: flex;
+    gap: 160px;
+    align-items: center;
+    justify-content: center;
+
+    @include abstracts.screen(xl) {
+        gap: 100px;
+    }
+}
+
+.method__left {
+    position: relative;
+
+    &--thumb {
+        width: 100%;
+        height: 100%;
+    }
+
+    &--img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &--icon {
+        position: absolute;
+        top: -38px;
+        right: -42px;
+        z-index: -1;
+    }
+}
+
+.method__right {
+    max-width: 470px;
+
+    &--desc {
+        margin: 20px 0 40px;
+    }
+
+    &--link {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,69 @@
+.store__blog {
+    margin-top: 75px;
+}
+
+.store__inner {
+    padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.store__content {
+    text-align: center;
+
+    &--heading {
+        margin: 14px 0;
+    }
+
+    &--desc {
+        max-width: 632px;
+        margin: 0 auto;
+        // margin-bottom: 60px;
+    }
+}
+
+.store__item {
+    position: relative;
+
+    &--thumb {
+        width: 100%;
+    }
+
+    &--img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &--content {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+    }
+
+    &--more {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--price {
+        padding: 6px 10px;
+        background: #FFFFFF;
+    }
+}
+
+.store__more {
+    margin: 0 auto;
+    padding: 6px 8px;
+
+    &--link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}

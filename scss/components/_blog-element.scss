@@ -1,0 +1,25 @@
+.element__blog {
+    padding: 86px 0;
+}
+
+.element__inner {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.element__left, .element__right {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.element__item  {
+    text-align: center;
+
+        &--heading {
+            margin: 48px 0 6px;
+        }
+}
+

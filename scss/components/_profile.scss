@@ -1,5 +1,15 @@
+@use "../abstracts";
+
 .profile-container {
     padding-bottom: 94px;
+
+    @include abstracts.screen(xl) {
+      padding-bottom: 70px;
+    }
+
+    @include abstracts.screen(sm) {
+      padding-bottom: 30px;
+    }
 }
 
 .profile-inner {
@@ -9,12 +19,34 @@
     position: absolute;
     top: 136px;
     left: -52px;
+
+    @include abstracts.screen(md) {
+      width: 70px;
+      top: 138px;
+      left: -34px;
+    }
+
+    @include abstracts.screen(sm) {
+      width: 50px;
+      top: 219px;
+      left: -24px;
+    }
+  }
+
+  &__thumb {
+    width: 100%;
+    // height: 100%;
+    flex-shrink: 0;
   }
 
   &__img {
     width: 100%;
     // height: 100%;
     object-fit: contain;
+
+    @include abstracts.screen(sm) {
+
+    }
   }
 
   &__heading,
@@ -27,18 +59,43 @@
   &__desc {
     margin: 16px auto 40px;
     width: 768px;
-    // display: inline-block;
+
+    @include abstracts.screen(lg) {
+      max-width: 560px;
+    }
+
+    @include abstracts.screen(md) {
+      max-width: 430px;
+    }
+
+    @include abstracts.screen(md) {
+      max-width: calc(100% - 30px)
+    }
   }
 
   &__name {
     margin-top: 30px;
+
+    @include abstracts.screen(lg) {
+      margin-top: 16px;
+    }
   }
 
   &__job {
     margin-top: 4px;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
     line-height: 155.556%;
     color: var(--text-color);
+
+    @include abstracts.screen(md) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__gap {
+    @include abstracts.screen(md) {
+      gap: 15px;
+    }
   }
 }

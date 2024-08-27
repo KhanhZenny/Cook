@@ -16,6 +16,14 @@
 
   &__desc {
     color: var(--text-desc);
+
+    @include abstracts.screen(lg) {
+      font-size: 1.8rem;
+    }
+
+    @include abstracts.screen(md) {
+      font-size: 1.4rem;
+    }
   }
 
   &__link {
@@ -33,6 +41,14 @@
     @include abstracts.screen(xl) {
       font-size: 6rem;
     }
+
+    @include abstracts.screen(md) {
+      font-size: 4.2rem;
+    }
+
+    @include abstracts.screen(md) {
+      font-size: 3.6rem;
+    }
   }
 
   &__medium {
@@ -44,6 +60,18 @@
     text-transform: capitalize;
 
     @include abstracts.screen(xl) {
+      font-size: 2rem;
+    }
+
+    @include abstracts.screen(lg) {
+      font-size: 2.6rem;
+    }
+
+    @include abstracts.screen(md) {
+      font-size: 2.2rem;
+    }
+
+    @include abstracts.screen(sm) {
       font-size: 2rem;
     }
   }
@@ -76,6 +104,10 @@
 
     @include abstracts.screen(xl) {
       font-size: 2.4rem;
+    }
+
+    @include abstracts.screen(sm) {
+      font-size: 2rem;
     }
 
     &__active {

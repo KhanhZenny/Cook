@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .slide-container {
   margin-top: 81px;
   padding-bottom: 150px;
@@ -10,6 +12,28 @@
   background: #fb8f2c;
   padding: 40px;
   border-radius: 20px;
+
+  @include abstracts.screen(lg) {
+    gap: 20px;
+  }
+}
+
+.slide-box {
+  display: flex;
+  gap: 20px;
+
+  @include abstracts.screen(xl) {
+    text-align: center;
+  }
+
+  @include abstracts.screen(lg) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include abstracts.screen(md) {
+    gap: 15px;
+  }
 }
 
 .slide-item {
@@ -17,11 +41,37 @@
   gap: 16px;
   align-items: center;
 
+  @include abstracts.screen(xl) {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include abstracts.screen(lg) {
+    justify-content: space-between;
+  }
+
+  @include abstracts.screen(md) {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__name {
     font-family: Libre Bodoni;
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 500;
     line-height: 110.526%;
     color: #111114;
+
+    @include abstracts.screen(xl) {
+      font-size: 2.8rem;
+    }
+
+    @include abstracts.screen(md) {
+      font-size: 2.5rem;
+    }
   }
 }

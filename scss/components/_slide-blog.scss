@@ -1,0 +1,42 @@
+@use "../abstracts";
+
+.slide__blog {
+  margin-top: 60px;
+  padding: 50px 0;
+
+
+  &--inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include abstracts.screen(xxl) {
+        flex-direction: column;
+    }
+  }
+
+  &--more {
+    display: flex;
+    gap: 30px;
+
+    @include abstracts.screen(xxl) {
+        justify-content: space-between;
+        gap: 100px;
+    }
+  }
+
+  &--item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &--heading {
+    color: #111114 !important;
+    }
+
+    &--desc {
+      color: #111114cc !important;
+    }
+  }
+}

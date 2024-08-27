@@ -1,0 +1,15 @@
+@use "../abstracts";
+
+.menu__container {
+  margin-bottom: 70px;
+  @include abstracts.screen(lg) {
+    margin-bottom: 50px;   
+  }
+}
+
+.menu__sidebar {
+  color: #111114CC;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 155.556%;
+}

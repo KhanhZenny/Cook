@@ -1,0 +1,83 @@
+@use "../abstracts";
+
+.contact__blog {
+  padding: 67px 0;
+}
+
+.contact__inner {
+  &--heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+}
+
+.contact__more {
+  position: relative;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right bottom, #fbf8fc, #fbf8fc17);
+
+  &--icon {
+    position: absolute;
+    top: -52px;
+    left: -52px;
+    z-index: -1;
+  }
+
+  &--thumb {
+    width: 100%;
+    height: 100%;
+  }
+
+  &--img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.contact__input {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  background: #fb8f2c;
+
+  @include abstracts.screen(xl) {
+    gap: 15px;
+  }
+}
+
+.contact__item {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  background: #e3822a;
+  min-width: 550px;
+  cursor: pointer;
+
+  &--bottom {
+    padding: 16px 20px 70px 20px;
+
+    @include abstracts.screen(xl) {
+      padding-bottom: 50px;
+    }
+  }
+
+  &--form {
+    background: transparent;
+    padding-right: 50px;
+
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+}

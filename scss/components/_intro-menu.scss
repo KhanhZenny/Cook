@@ -1,0 +1,66 @@
+@use "../abstracts";
+
+.menu {
+  background: var(--background);
+  padding: 50px 0;
+}
+
+.menu-intro__inner {
+  display: flex;
+  gap: 120px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  @include abstracts.screen(xl) {
+    gap: 80px;
+  }
+
+  @include abstracts.screen(lg) {
+    gap: 30px;
+  }
+}
+
+.menu-intro__thumb {
+  max-width: 450px;
+  @include abstracts.screen(lg) {
+    max-width: 400px;
+  }
+
+  @include abstracts.screen(md) {
+    display: none;
+  }
+}
+
+.menu-intro__img,
+.menu-intro__image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.menu-intro__middle {
+  max-width: 570px;
+  text-align: center;
+
+  @include abstracts.screen(sm) {
+    max-width: 339px;
+  }
+
+  &--heading {
+    margin: 10px 0;
+  }
+
+  &--desc {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+
+  &--link {
+    display: inline-block;
+    margin-top: 40px;
+
+    @include abstracts.screen(lg) {
+      margin-top: 30px;
+    }
+  }
+}

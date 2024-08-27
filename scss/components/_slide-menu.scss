@@ -1,0 +1,48 @@
+@use "../abstracts";
+
+.menu-slide {
+  background: #fb8f2c;
+}
+
+.slide-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 159px;
+  padding: 40px 0;
+  text-align: center;
+
+  @include abstracts.screen(xl) {
+    gap: 60px;
+  };
+
+  @include abstracts.screen(lg) {
+    flex-direction: column;
+    // gap: 60px;
+  }
+
+  &__address,
+  &__hotline,
+  &__time {
+    max-width: 270px;
+  }
+
+  &__address {
+    &--desc {
+      margin-top: 10px;
+    }
+  }
+
+  &__hotline {
+    &--desc {
+      max-width: calc(100% - 75px);
+      margin: 10px auto 0; 
+    }
+  }
+
+  &__time {
+    &--desc {
+      margin-top: 10px;
+    }
+  }
+}
