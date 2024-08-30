@@ -1,0 +1,45 @@
+.order__deliver {
+    margin: 150px 0;
+
+    &--inner {
+        display: flex;
+        gap: 130px;
+    }
+
+    &--content {
+        &--desc {
+            margin: 20px 0 30px;
+        }
+
+        &--link {
+            display: inline-block;
+        }
+    }
+
+    &--media {
+        position: relative;
+    }
+
+    &--star, &--sup {
+        position: absolute;
+    }
+
+    &--star {
+        top: 16px;
+        right: -60px;
+    }
+
+    &--sup  {
+        left: -60px;
+        bottom: -60px;
+    }
+
+    &--thumb {
+        &--img {
+            width: 470px;
+            height: 425px;
+            object-fit: cover;
+        }
+    }
+}
+

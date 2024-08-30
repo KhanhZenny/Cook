@@ -1,0 +1,50 @@
+.order__product {
+    margin-top: 75px;
+
+    &--inner {
+        display: flex;
+        gap: 130px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--media {
+        position: relative;
+    }
+
+    &--icon, &--icon1 {
+        position: absolute;
+    }
+
+    &--icon {
+        left: -52px;
+        top: -52px;
+        z-index: -1;
+    }
+
+    &--icon1 {
+        bottom: 56px;
+        right: -56px;
+    }
+
+    // &--thumb {
+
+    // }
+
+    &--img {
+        width: 468px;
+        height: 532px;
+        object-fit: cover;
+    }
+
+    &--content {
+        &--desc {
+            margin: 20px 0 30px;
+        }
+
+        &--link {
+            display: inline-block;
+        }
+    }
+}
+

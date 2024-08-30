@@ -1,25 +1,50 @@
+@use "../abstracts";
+
 .element__blog {
-    padding: 86px 0;
+  padding: 86px 0;
+
+  @include abstracts.screen(lg) {
+    padding: 60px 0;
+  }
 }
 
 .element__inner {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-}
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
 
-.element__left, .element__right {
-    display: flex;
+  @include abstracts.screen(lg) {
     flex-direction: column;
-    gap: 150px;
+    gap: 71px;
+  }
 }
 
-.element__item  {
-    text-align: center;
+.element__left,
+.element__right {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
 
-        &--heading {
-            margin: 48px 0 6px;
-        }
+  @include abstracts.screen(lg) {
+    gap: 50px;
+  }
 }
 
+.element__item {
+  text-align: center;
+
+  &--heading {
+    margin: 48px 0 6px;
+
+    @include abstracts.screen(lg) {
+        margin-top: 36px;
+    }
+  }
+
+  &--desc {
+    @include abstracts.screen(lg) {
+        max-width: 450px;
+    }
+  }
+}

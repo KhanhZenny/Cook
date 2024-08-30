@@ -3,6 +3,10 @@
 .input__blog {
   margin-top: 140px;
   background: #fb8f2c;
+
+  @include abstracts.screen(lg) {
+    margin-top: 80px;
+  }
 }
 
 .input__inner {
@@ -21,11 +25,16 @@
   display: flex;
   gap: 20px;
 
+  @include abstracts.screen(md) {
+    flex-direction: column;
+    width: 100%;
+  }
+
   &--enter {
     padding: 20px 200px 20px 20px;
 
-    @include abstracts.screen(xl) {
-      // padding-right: 60px;
+    @include abstracts.screen(md)  {
+      padding-right: 20px;
     }
   }
 }

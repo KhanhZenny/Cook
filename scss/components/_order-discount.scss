@@ -1,0 +1,56 @@
+.discount__background {
+    background:#000;
+}
+
+.order__discount {
+    display: flex;
+    gap: 130px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    overflow: hidden;
+
+    &--media {
+        position: relative;
+    }
+
+    &--sup {
+        position: absolute;
+        top: -30px;
+        z-index: 1;
+    }
+
+    &--thumb {
+        margin-left: 100px;
+        width: 469px;
+        height: 453px;
+        transform: translateY(10%);
+
+        &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &--content {
+        position: relative;
+
+    }
+
+    &--desc {
+       margin: 10px 0 40px;
+    }
+
+    &--link {
+        color: #fff !important;
+        display: inline-block;
+    }
+    
+    &--icon {
+        position: absolute;
+        right: 0;
+        bottom: -125px;
+    }
+
+}

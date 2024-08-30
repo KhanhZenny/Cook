@@ -1,69 +1,81 @@
+@use "../abstracts";
+
 .store__blog {
-    margin-top: 75px;
+  margin-top: 75px;
+
+  @include abstracts.screen(lg) {
+    margin-top: 50px;
+  }
 }
 
 .store__inner {
-    padding: 75px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  padding: 75px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  &--gap {
+    @include abstracts.screen(lg) {
+      gap: 50px;
+    }
+  }
 }
 
 .store__content {
-    text-align: center;
+  text-align: center;
 
-    &--heading {
-        margin: 14px 0;
-    }
+  &--heading {
+    margin: 14px 0;
+  }
 
-    &--desc {
-        max-width: 632px;
-        margin: 0 auto;
-        // margin-bottom: 60px;
-    }
+  &--desc {
+    max-width: 632px;
+    margin: 0 auto;
+    // margin-bottom: 60px;
+  }
 }
 
 .store__item {
-    position: relative;
+  position: relative;
 
-    &--thumb {
-        width: 100%;
-    }
+  &--thumb {
+    width: 100%;
+  }
 
-    &--img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  &--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    &--content {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        left: 20px;
-    }
+  &--content {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+  }
 
-    &--more {
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  &--more {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    &--price {
-        padding: 6px 10px;
-        background: #FFFFFF;
-    }
+  &--price {
+    padding: 6px 10px;
+    background: #ffffff;
+  }
 }
 
 .store__more {
-    margin: 0 auto;
-    padding: 6px 8px;
+  margin: 0 auto;
+  padding: 6px 8px;
 
-    &--link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
+  &--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }

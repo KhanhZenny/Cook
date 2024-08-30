@@ -1,0 +1,18 @@
+.order__slide {
+    padding: 43px 0;
+
+    &--inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &--item {
+        text-align: center;
+    }
+    
+    &--heading, &--desc {
+        color: #111114 !important;
+    }
+}
+

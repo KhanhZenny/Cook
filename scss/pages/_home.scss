@@ -4,8 +4,8 @@
   background: var(--background-color);
   padding-top: 26px;
 
-  &__container {
-  }
+  // &__container {
+  // }
 
   &__desc,
   &__link {
@@ -85,6 +85,7 @@
   }
 
   &__high {
+    color: var(--text-color);
     font-family: Libre Bodoni;
     font-size: 4rem;
     font-weight: 500;
@@ -113,5 +114,9 @@
     &__active {
       color: #fb8f2c;
     }
+  }
+
+  &__slide {
+    background: #FB8F2C;
   }
 }

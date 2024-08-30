@@ -1,0 +1,43 @@
+.order__story {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    &--content {
+        &--heading {
+            margin-bottom: 16px;
+        }
+
+        &--desc {
+            margin-bottom: 44px;
+        }
+
+        &--link {
+            display: inline-block;
+        }
+    }
+
+    &--media {
+        position: relative;
+    }
+
+    &--icon {
+        position: absolute;
+        top: -38px;
+        right: -42px;
+        z-index: -1;
+    }
+
+    &--thumb {
+        width: 540px;
+        height: 600px;
+    }
+
+    &--img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

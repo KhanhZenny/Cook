@@ -13,6 +13,12 @@
   @include abstracts.screen(xl) {
     gap: 25px;
   }
+
+  @include abstracts.screen(lg) {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
 }
 
 .blog__left {
@@ -41,6 +47,16 @@
     min-width: 500px;
     height: 332px;
   }
+
+  @include abstracts.screen(md) {
+    min-width: 350px;
+    height: 210px;
+  } 
+
+  @include abstracts.screen(sm) {
+    min-width: 300px;
+    height: 180px;
+  } 
 
   &--thumb {
     position: absolute;

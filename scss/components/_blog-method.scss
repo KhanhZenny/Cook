@@ -14,6 +14,11 @@
     @include abstracts.screen(xl) {
         gap: 100px;
     }
+
+    @include abstracts.screen(lg) {
+        flex-direction: column-reverse;
+        align-items: inherit;
+    } 
 }
 
 .method__left {
@@ -41,8 +46,16 @@
 .method__right {
     max-width: 470px;
 
+    @include abstracts.screen(lg) {
+        width: 100%;    
+    }
+
     &--desc {
         margin: 20px 0 40px;
+
+        @include abstracts.screen(lg) {
+            
+        }
     }
 
     &--link {
