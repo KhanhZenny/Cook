@@ -48,19 +48,19 @@
         load("#header", "./Templates/header.html");
     </script>
 
-    <div class="container_fuild Order">
+    <div class="Order">
         <div class="order__container">
             <div class="container">
                 <div class="order__home">
-                    <div class="order__inner">
-                        <div class="order__content">
+                    <div class="row order__inner">
+                        <div class="col-7 col-xl-6 col-lg-12">
                             <h1 class="home__heading order__content--heading">Order Healthy & Fresh Food Any Time</h1>
-                            <p class="home__desc home__content--desc">Italian food makes people think of big
+                            <p class="home__desc order__content--desc">Italian food makes people think of big
                                 family dinners. So you may want to position your restaurant as a place to bring the
                                 whole family.</p>
                         </div>
 
-                        <div class="order__left">
+                        <div class="col-5 col-xl-5 offset-xl-1 col-lg-12 offset-lg-0 order__left">
                             <div class="order__media">
                                 <div class="order__thumb">
                                     <img src="./assets/img/Order_menu/media thumb.png" alt="" class="order__thumb--img">
@@ -89,32 +89,32 @@
                 <div class="order__popular">
                     <div class="order__popular--inner">
                         <h1 class="home__heading order__popular--heading">Popular Restaurant</h1>
-                        <div class="order__popular--item">
-                            <div>
+                        <div class="row row-cols-7 row-cols-lg-4 row-cols-md-3 order__popular--item">
+                            <div class="col">
                                 <img src="./assets/img/Order-popular/popular.png" alt=""
                                     class="order__popular--item--img">
                             </div>
-                            <div>
+                            <div class="col">
                                 <img src="./assets/img/Order-popular/popular 1.png" alt=""
                                     class="order__popular--item--img">
                             </div>
-                            <div>
+                            <div class="col">
                                 <img src="./assets/img/Order-popular/popular 2.png" alt=""
                                     class="order__popular--item--img">
                             </div>
-                            <div>
+                            <div class="col">
                                 <img src="./assets/img/Order-popular/popular 3.png" alt=""
                                     class="order__popular--item--img">
                             </div>
-                            <div>
+                            <div class="col">
                                 <img src="./assets/img/Order-popular/popular 4.png" alt=""
                                     class="order__popular--item--img">
                             </div>
-                            <div>
+                            <div class="col">
                                 <img src="./assets/img/Order-popular/popular 5.png" alt=""
                                     class="order__popular--item--img">
                             </div>
-                            <div>
+                            <div class="col">
                                 <img src="./assets/img/Order-popular/popular 6.png" alt=""
                                     class="order__popular--item--img">
                             </div>
@@ -127,22 +127,22 @@
         <div class="order__container">
             <div class="container">
                 <div class="order__product">
-                    <div class="order__product--inner">
-                        <div class="order__product--media">
-                            <div class="order__product--icon">
-                                <img src="./assets/icon/star-contact.svg" alt="" class="order__product--more">
-                            </div>
-
+                    <div class="row order__product--inner">
+                        <div class="col-5 col-xl-6 col-lg-12  order__product--media">
                             <div class="order__product--thumb">
+                                <div class="order__product--more">
+                                    <img src="./assets/icon/star-contact.svg" alt=""
+                                        class="order__product--more--small">
+                                </div>
                                 <img src="./assets/img/Order-product/order-product.png" alt=""
                                     class="order__product--img">
-                            </div>
-                            <div class="order__product--icon1">
-                                <img src="./assets/icon/vector.svg" alt="" class="order__product--vector">
+                                <div class="order__product--vector">
+                                    <img src="./assets/icon/vector.svg" alt="" class="order__product--vector--small">
+                                </div>
                             </div>
                         </div>
 
-                        <div class="order__product--content">
+                        <div class="col-6 offset-1 col-xl-5 col-lg-12 offset-lg-0 order__product--content">
                             <h1 class="home__heading order__product--content--heading">Panpie, Burgers, And Best Pizzas
                                 in Town</h1>
                             <p class="home__desc order__product--content--desc">Piorem ipsum dolor sit amet consectetur
@@ -161,8 +161,8 @@
         <div class="order__container">
             <div class="container">
                 <div class="order__deliver">
-                    <div class="order__deliver--inner">
-                        <div class="order__deliver--content">
+                    <div class="row  order__deliver--inner">
+                        <div class="col-5 col-lg-12 order__deliver--content">
                             <h1 class="home__heading order__deliver--content--heading">Chicken King Burger</h1>
                             <p class="home__desc order__deliver--content--desc">Order at Burger King Bangladesh near you
                                 with foodpanda <br> ✓ Delivery to your home or office<br> ✓ Safe & easy payment options.
@@ -173,19 +173,15 @@
                             </a>
                         </div>
 
-                        <div class="order__deliver--media">
-                            <div class="order__deliver--star">
-                                <img src="./assets/icon/order-star.svg" alt="" class="order__deliver--star--small">
-                            </div>
+                        <div class="col-6 offset-1 col-lg-12 offset-lg-0 order__deliver--media">
 
-                            <div class="order__deliver--sup">
-                                <img src="./assets/icon/order-sup.svg" alt="" class="order__deliver--sup--small">
-                            </div>
+                            <div class="order__deliver--thumb">
+                                <img src="./assets/icon/order-star.svg" alt="" class="order__deliver--star">
 
-                            <a href="#!" class="order__deliver--thumb">
+                                <img src="./assets/icon/order-sup.svg" alt="" class="order__deliver--sup">
                                 <img src="./assets/img/Order-product/order-product.png" alt=""
                                     class="order__deliver--thumb--img">
-                            </a>
+                            </div>
 
                         </div>
                     </div>
@@ -259,7 +255,7 @@
                     </ul>
 
                     <div class="order__food--media">
-                        <div class="row row-cols_3">
+                        <div class="row row-cols-3 row-cols-lg-1 order__food--gap">
                             <div class="col">
                                 <div class="order__food--item">
                                     <div class="order__food--thumb">
@@ -318,7 +314,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-cols_3">
+                        <div class="row row-cols_3 row-cols-lg-1 order__food--gap">
                             <div class="col">
                                 <div class="order__food--item">
                                     <div class="order__food--thumb">
@@ -384,8 +380,8 @@
 
         <div class="order__container">
             <div class="container">
-                <div class="order__story">
-                    <div class="order__story--content">
+                <div class="row order__story">
+                    <div class="col-6 col-lg-12 order__story--content">
                         <h1 class="home__heading order__story--content--heading">Michelin Lunch, Dinner Or Both?</h1>
                         <p class="order__story--content--desc home__desc">It’s the story of an everlasting love affair,
                             Dieter Delicioz and the Atlantic Ocean. Our proximity to the abundant riches of the sea and
@@ -397,12 +393,11 @@
                         </a>
                     </div>
 
-                    <div class="order__story--media">
-                        <div class="order__story--icon">
-                            <img src="./assets/icon/grass.svg" alt="" class="order__story--grass">
-                        </div>
-
+                    <div class="col-6 col-lg-12 order__story--media">
                         <div class="order__story--thumb">
+                            <div class="order__story--grass">
+                                <img src="./assets/icon/grass.svg" alt="" class="order__story--grass--small">
+                            </div>
                             <img src="./assets/img/ORDER/order-story.jpg" alt="" class="order__story--img">
                         </div>
                     </div>
@@ -412,19 +407,16 @@
 
         <div class="order__container discount__background">
             <div class="container">
-                <div class="order__discount">
-                    <div class="order__discount--media">
-                        <div class="order__discount--sup">
-                            <img src="./assets/img/ORDER/order-discount_sup.svg" alt=""
-                                class="order__discount--sup--price">
-                        </div>
-
+                <div class="row order__discount">
+                    <div class="col-6 col-lg-12 order__discount--media">
                         <div class="order__discount--thumb">
+                            <img src="./assets/img/ORDER/order-discount_sup.svg" alt=""
+                                class="order__discount--thumb--sup">
                             <img src="./assets/img/ORDER/order-discount.png" alt="" class="order__discount--thumb--img">
                         </div>
                     </div>
 
-                    <div class="order__discount--content">
+                    <div class="col-5 offset-1 col-lg-12 offset-lg-0 order__discount--content">
                         <h2 class="home__high">We Have Excellent Of Quality Pizza</h2>
                         <p class="home__desc order__discount--desc">Craving for a bite of quality pizza? Make sure the
                             pizza you order possesses these factors that make an awesome slice. Fresh Ingredients.</p>
@@ -452,7 +444,7 @@
                         </a>
                     </div>
 
-                    <div class="row row_cols-2">
+                    <div class="row row_cols-2 row-cols-lg-1 order__offer--gap">
                         <div class="col">
                             <div class="order__offer--item">
                                 <div class="order__offer--thumb">
@@ -531,7 +523,7 @@
                             <h1 class="home__heading order__blog--heading">What’s Happening Your Near City & Town</h1>
                         </div>
 
-                        <div class="row row-cols-3">
+                        <div class="row row-cols-3 row-cols-lg-1 order__blog--gap">
                             <div class="col">
                                 <div class="order__blog--item">
                                     <div class="order__blog--thumb">
@@ -541,6 +533,8 @@
                                     <h3 class="home__medium order__blog--item--heading">New restaurant in town that
                                         Looking think that</h3>
                                     <p class="home__desc order__blog--item--desc">August 6, 2022</p>
+
+                                    <!-- <div class="order__blog--item--separate d-none d-lg-block"></div> -->
 
                                     <a href="" class="home__desc order__blog--item--link">
                                         Read Now
@@ -583,7 +577,34 @@
                                 </div>
                             </div>
                         </div>
+
+                        <a href="#!" class="order__blog--input">
+                            <div class=" home__desc order__blog--more">
+                                Explore All Blogs
+                                <img src="./assets/icon/left.svg" alt="">
+                            </div>
+                            <div class="home__separate"></div>
+                        </a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order__container">
+            <div class="order__subcrible">
+                <div class="order__subcrible--thumb">
+                    <img src="./assets/img/ORDER/order-subcrible.png" alt="" class="order__subcrible--img">
+                </div>
+
+                <div class="order__subcrible--content">
+                    <h1 class="home__heading">Subscribe Newsletter & get letest news</h1>
+                    <p class="home__desc order__subcrible--desc">Get insider access to news around the innovations,
+                        unique cooking techniques, culinary concepts, insights, and more</p>
+                    <form action="" class="order__subcrible--form">
+                        <input type="text" class="order__subcrible--input home__desc"
+                            placeholder="Enter your email address">
+                        <img src="./assets/icon/left-subcrible.svg" alt="" class="order__subcrible--icon">
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .order__slide {
     padding: 43px 0;
 
@@ -5,6 +7,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        @include abstracts.screen(sm) {
+            gap: 34px;
+        }
     }
     
     &--item {

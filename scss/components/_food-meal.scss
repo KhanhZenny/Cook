@@ -1,0 +1,105 @@
+@use "../abstracts";
+
+.food__meal {
+  margin-top: 100px;
+  padding-top: 50px;
+
+  &--inner {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &--content {
+    text-align: center;
+  }
+
+  &--desc {
+    margin-top: 6px;
+  }
+
+  &--list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+
+    @include abstracts.screen(md) {
+      row-gap: 30px;
+      column-gap: 70px;
+      // align-items: flex-start;
+    }
+  }
+
+  &--link {
+    &:active {
+      text-decoration: underline;
+      color: #fff;
+      text-underline-offset: 6px;
+    }
+  }
+
+  &--gap {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  &--thumb {
+    position: relative;
+    padding-top: 108%;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  &--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--icon {
+    position: absolute;
+    padding: 22px 14px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+  }
+
+  &--right {
+    position: absolute;
+    padding: 22px 14px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateX(50%);
+    right: 0;
+    top: 50%;
+  }
+
+  &--item {
+    &--heading {
+      margin-top: 16px;
+    }
+
+    &--desc {
+      margin: 6px 0 26px;
+    }
+
+    &--separate {
+      height: 1px;
+      width: 100%;
+      background: #ffffffcc;
+    }
+  }
+
+  &--more {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

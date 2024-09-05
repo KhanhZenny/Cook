@@ -1,56 +1,81 @@
+@use "../abstracts";
+
 .discount__background {
-    background:#000;
+  background: #000;
 }
 
 .order__discount {
-    display: flex;
-    gap: 130px;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  overflow: hidden;
 
-    &--media {
-        position: relative;
+  @include abstracts.screen(lg) {
+    gap: 40px;
+  }
+
+  &--thumb {
+    padding-top: 97%;
+    position: relative;
+    flex-shrink: 0;
+
+    &--img {
+      position: absolute;
+      top: 0;
+      left: 101px;
+      width: calc(100% - 101px);
+      height: 100%;
+      object-fit: contain;
+      transform: translateY(10%);
+
+      @include abstracts.screen(lg) {
+        transform: translateY(0);
+      // width: calc(100% - 80px);
+
+      }
+    //   margin-left: 101px;
     }
 
     &--sup {
-        position: absolute;
-        top: -30px;
-        z-index: 1;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+
+      @include abstracts.screen(lg) {
+        width: 200px;
+        height: 200px;
+        left: 45px;
+      }
+
+      @include abstracts.screen(sm) {
+        width: 152px;
+        height: 152px;
+        left: 30px;
+      }
     }
+  }
 
-    &--thumb {
-        margin-left: 100px;
-        width: 469px;
-        height: 453px;
-        transform: translateY(10%);
+  &--content {
+    position: relative;
 
-        &--img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    @include abstracts.screen(lg) {
+      margin-bottom: 40px;
     }
+  }
 
-    &--content {
-        position: relative;
+  &--desc {
+    margin: 10px 0 40px;
+  }
 
-    }
+  &--link {
+    color: #fff !important;
+    display: inline-block;
+  }
 
-    &--desc {
-       margin: 10px 0 40px;
-    }
-
-    &--link {
-        color: #fff !important;
-        display: inline-block;
-    }
-    
-    &--icon {
-        position: absolute;
-        right: 0;
-        bottom: -125px;
-    }
-
+  &--icon {
+    position: absolute;
+    right: 0;
+    transform: translateY(100%);
+  }
 }

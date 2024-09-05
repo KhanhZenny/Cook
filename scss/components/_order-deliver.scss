@@ -1,45 +1,82 @@
+@use "../abstracts";
+
 .order__deliver {
-    margin: 150px 0;
+  margin: 150px 0;
 
-    &--inner {
-        display: flex;
-        gap: 130px;
+  &--inner {
+    @include abstracts.screen(lg) {
+      gap: 40px;
+    }
+  }
+
+  &--content {
+    &--desc {
+      margin: 20px 0 30px;
     }
 
-    &--content {
-        &--desc {
-            margin: 20px 0 30px;
-        }
+    &--link {
+      display: inline-block;
+    }
+  }
 
-        &--link {
-            display: inline-block;
-        }
+  &--star,
+  &--sup {
+    position: absolute;
+  }
+
+  &--star {
+    z-index: 1;
+    top: 16px;
+    right: -60px;
+
+    @include abstracts.screen(lg) {
+      right: -15px;
     }
 
-    &--media {
-        position: relative;
+    @include abstracts.screen(md) {
+      width: 52px;
+      height: 52px;
+      right: 9px;
     }
+  }
 
-    &--star, &--sup {
-        position: absolute;
-    }
+  &--sup {
+    left: -60px;
+    bottom: -60px;
 
-    &--star {
-        top: 16px;
-        right: -60px;
+    @include abstracts.screen(lg) {
+      left: -20px;
+      bottom: -55px;
     }
+    
+    @include abstracts.screen(md)  {
+      width: 57px;
+      height: 50px;
+      left: 0;
+      bottom: -40px;
+    }
+  }
 
-    &--sup  {
-        left: -60px;
-        bottom: -60px;
-    }
+  &--thumb {
+    position: relative;
+    flex-shrink: 0;
+    padding-top: 90%;
+    width: 100%;
 
-    &--thumb {
-        &--img {
-            width: 470px;
-            height: 425px;
-            object-fit: cover;
-        }
+    &--img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include abstracts.screen(lg) {
+        width: calc(100% - 80px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
+  }
 }
-

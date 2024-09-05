@@ -1,0 +1,28 @@
+@use "../abstracts";
+
+.food__advantage {
+  margin: 150px auto;
+  padding: 40px 0;
+  background: #FB8F2C;
+  overflow: hidden;
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  &--item {
+    display: flex;
+    gap: 18px;
+  }
+
+  &--heading {
+    font-size: 3.8rem;
+    font-weight: 500;
+    line-height: 110.526%;
+    color: #111114;
+    min-width: 240px;
+  }
+}

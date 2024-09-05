@@ -1,50 +1,94 @@
+@use "../abstracts";
+
 .order__product {
-    margin-top: 75px;
+  margin-top: 75px;
 
-    &--inner {
-        display: flex;
-        gap: 130px;
-        align-items: center;
-        justify-content: center;
+  &--inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include abstracts.screen(lg) {
+      gap: 60px;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &--thumb {
+    position: relative;
+    flex-shrink: 0;
+    padding-top: 116%;
+    // height: 100%;
+  }
+
+  &--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include abstracts.screen(lg) {
+      width: calc(100% - 50px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &--more {
+    &--small {
+      position: absolute;
+      // width: 100%;
+      left: -52px;
+      top: -52px;
+      z-index: -1;
+
+      @include abstracts.screen(lg) {
+        left: -15px;
+        top: -40px;
+        width: 80px;
+        height: 80px;
+      }
+
+      @include abstracts.screen(sm) {
+        width: 65px;
+        height: 65px;
+        left: -8px;
+        top: -32px;
+      }
+    }
+  }
+
+  &--vector {
+    &--small {
+      position: absolute;
+      bottom: 56px;
+      right: -56px;
+
+      @include abstracts.screen(lg) {
+        width: 80px;
+        height: 64px;
+        right: -20px;
+      }
+
+      @include abstracts.screen(sm) {
+        width: 64px;
+        right: -8px;
+        height: 51px;
+        bottom: 40px;
+      }
+    }
+  }
+
+  &--content {
+    &--desc {
+      margin: 20px 0 30px;
     }
 
-    &--media {
-        position: relative;
+    &--link {
+      display: inline-block;
     }
-
-    &--icon, &--icon1 {
-        position: absolute;
-    }
-
-    &--icon {
-        left: -52px;
-        top: -52px;
-        z-index: -1;
-    }
-
-    &--icon1 {
-        bottom: 56px;
-        right: -56px;
-    }
-
-    // &--thumb {
-
-    // }
-
-    &--img {
-        width: 468px;
-        height: 532px;
-        object-fit: cover;
-    }
-
-    &--content {
-        &--desc {
-            margin: 20px 0 30px;
-        }
-
-        &--link {
-            display: inline-block;
-        }
-    }
+  }
 }
-

@@ -1,0 +1,25 @@
+@use "../abstracts";
+
+.food__overview {
+  margin: 55px 0 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 0;
+
+  @include abstracts.screen(lg) {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &--item {
+    display: flex;
+    gap: 20px;
+  }
+
+  &--content {
+    &--heading {
+      color: #fb8f2c !important;
+    }
+  }
+}
