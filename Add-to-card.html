@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Plus Jakarta Sans, sans-serif;
+        }
+    </style>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Reset CSS -->
+
+    <!-- Script -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./Templates/header.html");
+    </script>
+
+    <div class="container">
+        <div class="card-item">
+            <div class="card-item__element">
+                <a href="#!">
+                    <img src="./assets/icon/trash.svg" alt="" class="card-item__element--img">
+                </a>
+
+                <div class="card-item__thumb">
+                    <img src="./assets/img/FOOD_PAGE/food-item1.png" alt="" class="card-item__img">
+                </div>
+
+                <p class="home__desc">Crispy chicken breasts</p>
+
+                <p class="home__desc">$24.99</p>
+
+                <form action="" class="card-item__form">
+                    <button class="card-item__form--btn card-item__form--btn--delete">
+                        <img src="./assets/icon/delete.svg" alt="">
+                    </button>
+
+                    <input type="text" class="home__desc card-item__form--input" value="1">
+
+                    <button class="card-item__form--btn">
+                        <img src="./assets/icon/add.svg" alt="">
+                    </button>
+                </form>
+
+                <p class="home__desc">$24.99</p>
+            </div>
+
+            <div class="card-item__element card-item__border">
+                <a href="#!">
+                    <img src="./assets/icon/trash.svg" alt="" class="card-item__element--img">
+                </a>
+
+                <div class="card-item__thumb">
+                    <img src="./assets/img/products/item 2.png" alt="" class="card-item__img">
+                </div>
+
+                <p class="home__desc">Spaghetti Napoletana</p>
+
+                <p class="home__desc">$59.00</p>
+
+                <form action="" class="card-item__form">
+                    <button class="card-item__form--btn card-item__form--btn--delete">
+                        <img src="./assets/icon/delete.svg" alt="">
+                    </button>
+
+                    <input type="text" class="home__desc card-item__form--input" value="1">
+
+                    <button class="card-item__form--btn">
+                        <img src="./assets/icon/add.svg" alt="">
+                    </button>
+                </form>
+
+                <p class="home__desc">$59.00</p>
+            </div>
+
+            <div class="card-item__element">
+                <div class="card-item__left">
+                    <input type="text" class="card-item__left--input" placeholder="Copon code">
+                    <a href="" class="btn card-item__left--btn">
+                        Apply coupon
+                    </a>
+                </div>
+
+                <a href="#!" class="btn card-item__btn">
+                    Update Cart
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 offset-6 col-lg-12 offset-lg-0 card-item__bottom">
+                <h1 class="home__sidebar">Cart totals</h1>
+
+
+                <div class="card-item__bottom--price">
+                    <p class="home__desc card-item__bottom--heading">Subtotal</p>
+                    <p class="home__desc">$83.99</p>
+                </div>
+
+                <div class="card-item__bottom--shipping">
+                    <p class="home__desc card-item__bottom--heading">Shipping</p>
+                    <div class="card-item__bottom--more">
+                        <p class="home__desc ">Flat rate: $6.00</p>
+                        <p class="home__desc card-item__bottom--gap">Shipping to New South Wales.</p>
+                        <div class="card-item__bottom--icon">
+                            <p class="home__desc">Change address</p>
+                            <img src="./assets/icon/car.svg" alt="" class="">
+                        </div>
+
+                        <form action="" class="card-item__bottom--form">
+                            <input type="text" class="card-item__bottom--input" placeholder="Australia">
+                            <img src="./assets/icon/arrow-down.svg" alt="" class="card-item__bottom--form--icon">
+                        </form>
+
+                        <form action="" class="card-item__bottom--form">
+                            <input type="text" class="card-item__bottom--input" placeholder="New South Wales">
+                            <img src="./assets/icon/arrow-down.svg" alt="" class="card-item__bottom--form--icon">
+                        </form>
+
+                        <form action="" class="card-item__bottom--form">
+                            <input type="text" class="card-item__bottom--input" placeholder="Suburb">
+                        </form>
+
+                        <form action="" class="card-item__bottom--form">
+                            <input type="text" class="card-item__bottom--input" placeholder="Postcode">
+                        </form>
+
+                        <a href="#!" class="btn card-item__bottom--btn">Update</a>
+                    </div>
+                </div>
+
+                <div class="card-item__bottom--total">
+                    <p class="home__desc card-item__bottom--heading">Total</p>
+                    <p class="home__desc">$89.99</p>
+                </div>
+
+                <a href="#!" class="btn card-item__bottom--check">
+                    Proceed to Checkout
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">footer</footer>
+    <script>
+        load("#footer", "./Templates/footer.html");
+    </script>
+</body>
+
+</html>

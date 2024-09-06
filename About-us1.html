@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Plus Jakarta Sans, sans-serif;
+        }
+    </style>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Reset CSS -->
+
+    <!-- Script -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./Templates/header.html");
+    </script>
+
+    <main class="menu__home">
+        <div class="container">
+            <div class="menu__first">
+                <div class="menu__first--top">
+                    <h1 class="home__heading">Breakfast</h1>
+                    <div class="menu__first--top--icon">
+                        <img src="./assets/icon/icon-menu.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="row row-cols-3 row-cols-lg-1 food__meal--gap">
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/MENU/menu-item 1.png" alt="" class="food__meal--img">
+
+                                <div class="food__meal--icon d-lg-none">
+                                    <img src="./assets/icon/left_more.svg" alt="">
+                                </div>
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                Egg Frittata Muffins. PIN IT
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive oil
+                                and
+                                pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate food__meal--more--separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$24</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/MENU/menu-item 2.png" alt="" class="food__meal--img">
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                Breakfast Bars. PIN IT
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate food__meal--more--separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$29</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/MENU/menu-item 3.png" alt="" class="food__meal--img">
+
+                                <div class="food__meal--right d-lg-none">
+                                    <img src="./assets/icon/right_more.svg" alt="">
+                                </div>
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                Breakfast Sandwiches
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate food__meal--more--separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu__second">
+            <div class="menu__second--thumb">
+                <img src="./assets/img/MENU/menu_thumb.png" alt="" class="menu__second--img">
+            </div>
+
+            <div class="menu__second--content">
+                <h1 class="home__heading menu__second--content--heading">Food is not just eating energy</h1>
+                <p class="menu__second--content--desc home__desc">It’s an experience.</p>
+                <a href="" class="btn menu__second--content--btn">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="menu__first menu__third">
+                <div class="menu__first--top">
+                    <h1 class="home__heading">Lunch</h1>
+                    <div class="menu__first--top--icon">
+                        <img src="./assets/icon/icon-menu.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="row row-cols-3 row-cols-lg-1 food__meal--gap">
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/FOOD_PAGE/food-item1.png" alt="" class="food__meal--img">
+
+                                <div class="food__meal--icon d-lg-none">
+                                    <img src="./assets/icon/left_more.svg" alt="">
+                                </div>
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                Crispy chicken breasts
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$54</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/FOOD_PAGE/food-item2.png" alt="" class="food__meal--img">
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                Schezwan Noodles
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$49</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/FOOD_PAGE/food-item3.png" alt="" class="food__meal--img">
+
+                                <div class="food__meal--right d-lg-none">
+                                    <img src="./assets/icon/right_more.svg" alt="">
+                                </div>
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                New Lubina Marinada
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$59</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="menu__first menu__third">
+                <div class="menu__first--top">
+                    <h1 class="home__heading">Dinner</h1>
+                    <div class="menu__first--top--icon">
+                        <img src="./assets/icon/icon-menu.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="row row-cols-3 row-cols-lg-1 food__meal--gap">
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <a href="./product.html">
+                                <div class="food__meal--thumb">
+                                    <img src="./assets/img/MENU/menu-dinner1.png" alt="" class="food__meal--img">
+    
+                                    <div class="food__meal--icon d-lg-none">
+                                        <img src="./assets/icon/left_more.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                Crispy chicken breasts
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$54</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/MENU/menu-dinner2.png" alt="" class="food__meal--img">
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                Schezwan Noodles
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$49</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/MENU/menu-dinner3.png" alt="" class="food__meal--img">
+
+                                <div class="food__meal--right d-lg-none">
+                                    <img src="./assets/icon/right_more.svg" alt="">
+                                </div>
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                New Lubina Marinada
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$59</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="menu__first menu__third">
+                <div class="menu__first--top">
+                    <h1 class="home__heading">Starters</h1>
+                    <div class="menu__first--top--icon">
+                        <img src="./assets/icon/icon-menu.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="row row-cols-3 row-cols-lg-1 food__meal--gap">
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/MENU/menu-start1.png" alt="" class="food__meal--img">
+
+                                <div class="food__meal--icon d-lg-none">
+                                    <img src="./assets/icon/left_more.svg" alt="">
+                                </div>
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                Crispy chicken breasts
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$54</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/MENU/menu-start2.png" alt="" class="food__meal--img">
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                Schezwan Noodles
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$49</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="food__meal--item">
+                            <div class="food__meal--thumb">
+                                <img src="./assets/img/MENU/menu-start3.png" alt="" class="food__meal--img">
+
+                                <div class="food__meal--right d-lg-none">
+                                    <img src="./assets/icon/right_more.svg" alt="">
+                                </div>
+                            </div>
+
+                            <h4 class="home__medium food__meal--item--heading">
+                                New Lubina Marinada
+                            </h4>
+
+                            <p class="home__desc food__meal--item--desc">Fresh toasted sourdough bread with olive
+                                oil and pomegranate.</p>
+
+                            <div class="food__meal--item--separate"></div>
+
+                            <div class="food__meal--more">
+                                <a href="" class="home__desc food__meal--more--link">
+                                    Order Now
+                                    <div class="home__separate"></div>
+                                </a>
+
+                                <p class="home__medium food__meal--more--price">$59</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">footer</footer>
+    <script>
+        load("#footer", "./Templates/footer.html");
+    </script>
+</body>
+
+</html>

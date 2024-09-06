@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Plus Jakarta Sans, sans-serif;
+        }
+    </style>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Reset CSS -->
+
+    <!-- Script -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./Templates/header.html");
+    </script>
+
+    <div class="container">
+        <div class="row menu__checkout">
+            <div class="col-6 col-lg-12">
+                <h3 class="home__sidebar">Billing details</h3>
+                <div class="menu__checkout--name">
+                    <form action="" class="menu__checkout--form">
+                        <p class="home__desc">Your name *</p>
+                        <input type="text" class="menu__checkout--form--input" placeholder="Foysal khan">
+                    </form>
+                    <form action="" class="menu__checkout--form">
+                        <p class="home__desc">Last name *</p>
+                        <input type="text" class="menu__checkout--form--input">
+                    </form>
+                </div>
+
+                <input type="text" class="menu__checkout--input" placeholder="Company name (optional)">
+                <input type="text" class="menu__checkout--input" placeholder="Country / Region *">
+
+                <div class="menu__checkout--address">
+                    <p class="home__desc">Street address *</p>
+                    <form action="" class="menu__checkout--address--form">
+                        <input type="text" class="menu__checkout--address--input" placeholder="Australia">
+                        <img src="./assets/icon/arrow-down.svg" alt="" class="menu__checkout--address--icon">
+                    </form>
+                </div>
+
+                <div class="menu__checkout--street">
+                    <p class="home__desc">Street address *</p>
+                    <input type="text" class="menu__checkout--street--input" placeholder="House number and street name">
+                </div>
+
+                <input type="text" class="menu__checkout--more" placeholder="House number and street name">
+
+                <input type="text" class="menu__checkout--input" placeholder="Town / City *">
+                <input type="text" class="menu__checkout--input" placeholder="District *">
+                <input type="text" class="menu__checkout--input" placeholder="Postcode / ZIP (optional)">
+                <input type="text" class="menu__checkout--input" placeholder="Phone *">
+                <input type="text" class="menu__checkout--input" placeholder="Email address *">
+
+
+                <div class="menu__checkout--method">
+                    <div class="menu__checkout--content menu__checkout--content--active">
+                        <p class="menu__checkout--content--desc">Direct bank transfer</p>
+                        <p class="home__desc">Make your payment directly into our bank account. Please use your Order ID
+                            as
+                            the payment reference. Your order will not be shipped until the funds have cleared in our
+                            account.</p>
+                    </div>
+                    <div class="menu__checkout--content">
+                        <p class="menu__checkout--content--desc">Check payments</p>
+                    </div>
+                    <div class="menu__checkout--content">
+                        <p class="menu__checkout--content--desc">Cash on delivery</p>
+                    </div>
+                    <div class="menu__checkout--content">
+                        <p class="menu__checkout--content--desc">PayPal</p>
+                    </div>
+
+                    <p class="home__desc">Your personal data will be used to process your order, support your experience
+                        throughout this website, and for other purposes described in our privacy policy.</p>
+                    <a href="#!" class="btn menu__checkout--btn">
+                        Place order
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-5 offset-1 col-xl-6 offset-xl-0 col-lg-12">
+                <div class="menu__checkout--order">
+                    <h4 class="home__sidebar">Your order</h4>
+
+                    <div class="menu__checkout--list">
+                        <div class="menu__checkout--item">
+                            <p class="menu__checkout--item--desc menu__checkout--item--first">Food</p>
+                            <p class="menu__checkout--item--desc">Subtotal</p>
+                        </div>
+
+                        <div class="menu__checkout--item">
+                            <p class="home__desc menu__checkout--item--first">Crispy chicken breasts x 1</p>
+                            <p class="home__desc">$24.99</p>
+                        </div>
+
+                        <div class="menu__checkout--item">
+                            <p class="home__desc menu__checkout--item--first">Spaghetti Napoletana x 1</p>
+                            <p class="home__desc">$59.00</p>
+                        </div>
+
+                        <div class="menu__checkout--item">
+                            <p class="home__desc menu__checkout--item--first">Subtotal</p>
+                            <p class="home__desc">$59.00</p>
+                        </div>
+
+                        <div class="menu__checkout--item">
+                            <p class="home__desc menu__checkout--item--first">Shipping</p>
+                            <p class="home__desc">Flat rate: $6.00</p>
+                        </div>
+
+                        <div class="menu__checkout--item">
+                            <p class="home__desc menu__checkout--item--first">Total</p>
+                            <p class="home__desc">$89.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">footer</footer>
+    <script>
+        load("#footer", "./Templates/footer.html");
+    </script>
+</body>
+
+</html>

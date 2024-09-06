@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Plus Jakarta Sans, sans-serif;
+        }
+    </style>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Reset CSS -->
+
+    <!-- Script -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./Templates/header.html");
+    </script>
+
+    <main class="page">
+        <div class="container">
+            <div class="row page__inner">
+                <div class="col-6 col-lg-12 page__inner--left">
+                    <h1 class="home__heading">Subscribe Newsletter & get letest news</h1>
+                    <p class="home__desc page__inner--desc">Our being able to do what we like best, every pleasure is to
+                        be welcomed and
+                        every pain avoided certain.</p>
+                    <ul class="page__inner--list">
+                        <li class="page__inner--item">
+                            <h3 class="page__inner--item--heading">98</h3>
+                            <p class="home__desc">Days</p>
+                        </li>
+
+                        <li class="page__inner--item">
+                            <h3 class="page__inner--item--heading">03</h3>
+                            <p class="home__desc">Hour</p>
+                        </li>
+
+                        <li class="page__inner--item">
+                            <h3 class="page__inner--item--heading">25</h3>
+                            <p class="home__desc">Minutes</p>
+                        </li>
+
+                        <li class="page__inner--item">
+                            <h3 class="page__inner--item--heading">12</h3>
+                            <p class="home__desc">Seconds</p>
+                        </li>
+                    </ul>
+
+                    <a href="#!" class="home__desc page__inner--link">
+                        Go to Home
+                        <div class="home__separate"></div>
+                    </a>
+                </div>
+
+                <div class="col-5 offset-1 col-xl-6 offset-xl-0 col-lg-12">
+                    <div class="food__subcrible--thumb">
+                        <img src="./assets/img/FOOD_PAGE/food_subcrible.png" alt="" class="food__subcrible--img">
+
+                        <div class="food__subcrible--icon page__inner--icon">
+                            <img src="./assets/icon/star-contact.svg" alt="" class="food__subcrible--icon--small">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        load("#footer", "./Templates/footer.html");
+    </script>
+</body>
+
+</html>

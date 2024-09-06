@@ -1,0 +1,168 @@
+@use "../abstracts";
+
+.product__feedback {
+  margin-top: 100px;
+
+  &--list {
+    display: flex;
+    margin: 0 -30px;
+  }
+
+  &--item {
+    padding: 12px 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 155.556%;
+    color: #ffffffcc;
+    user-select: none;
+    white-space: nowrap;
+
+    &--active {
+      color: #fff;
+      border-bottom: 1px solid #fb8f2c;
+    }
+
+    &:not(&--active) {
+      cursor: pointer;
+    }
+  }
+
+  &--gap {
+    @include abstracts.screen(lg) {
+      overflow: visible;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+
+  &--detail {
+    display: flex;
+    gap: 18px;
+  }
+
+  &--avatar {
+    width: 60px;
+    height: 60px;
+    display: block;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &--top {
+    margin: 8px 0 18px;
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+
+    &--name {
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 155.556%;
+    }
+
+    &--icon {
+      transform: translateY(-9px);
+    }
+
+    &--desc {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 171.429%;
+    }
+
+    &--star {
+      margin-top: 20px;
+    }
+  }
+
+  &--add {
+    margin-top: 60px;
+
+    &--desc {
+      margin-bottom: 40px;
+    }
+
+    &--gap {
+      @include abstracts.screen(lg) {
+        gap: 20px;
+      }
+    }
+
+    &--item {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #fff;
+    }
+
+    &--input {
+      background: transparent;
+      width: 100%;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+    &--icon {
+      margin-left: 16px;
+    }
+  }
+
+  &--rate {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    &--icon {
+      margin-top: 16px;
+    }
+  }
+
+  &--input {
+    margin-top: 10px;
+    width: 100%;
+    padding-bottom: 110px;
+    border-bottom: 1px solid #ffffff4d;
+    background: transparent;
+  }
+
+  &--desc {
+    margin-top: 50px;
+  }
+
+  &--press {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      border: 1px solid #fff;
+      top: 16px;
+      left: 0;
+    }
+
+    &--left {
+      margin-left: 40px;
+    }
+  }
+
+  &--link {
+    margin-top: 36px;
+    min-width: 116px;
+    --height: 42px;
+    background: #fb8f2ccc;
+  }
+
+  &--bottom {
+    margin: 100px 0 40px;
+  }
+}

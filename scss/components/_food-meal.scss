@@ -43,7 +43,10 @@
   &--gap {
     display: flex;
     flex-wrap: nowrap;
-    overflow: hidden;
+    
+    @include abstracts.screen(lg) {
+      overflow: hidden;
+    }
   }
 
   &--thumb {
@@ -101,5 +104,9 @@
     margin-top: 16px;
     display: flex;
     justify-content: space-between;
+
+    &--separate {
+      background: #fff !important;
+    }
   }
 }
