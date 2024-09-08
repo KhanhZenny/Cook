@@ -1,7 +1,7 @@
 @use "../abstracts";
 
 .page__inner {
-  margin-top: 150px;
+  margin: 150px 0;
   @include abstracts.screen(lg) {
     gap: 40px;
   }
@@ -56,13 +56,13 @@
     transform: translate(50%, 50%);
 
     @include abstracts.screen(lg) {
-        width: 68px;
-        height: 68px;
+      width: 68px;  
+      height: 68px;
       top: 0;
       left: 0;
       bottom: auto;
       right: auto;
-      transform: translate(-30%, -50%);
+      transform: translate(-33%, -50%);
     }
   }
 }

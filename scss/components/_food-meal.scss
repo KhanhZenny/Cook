@@ -72,6 +72,7 @@
     border-radius: 50%;
     transform: translateX(-50%);
     top: 50%;
+    cursor: pointer;
   }
 
   &--right {
@@ -82,9 +83,15 @@
     transform: translateX(50%);
     right: 0;
     top: 50%;
+    cursor: pointer;
+  }
+
+  &--left {
+    position: relative;
   }
 
   &--item {
+    // position: relative;
     &--heading {
       margin-top: 16px;
     }

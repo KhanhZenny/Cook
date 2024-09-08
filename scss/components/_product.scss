@@ -75,18 +75,26 @@
       }
     }
 
+
+
     &--icon {
-      transform: translateY(-4px);
+      transform: translateY(-2px);
+    }
+
+    &--total {
+      transform: translateY(3px);
     }
 
     &--middle {
+      max-width: 52px;
+      background: transparent;
       padding: 14px 20px;
       border: 1px solid #ffffffcc;
       height: 100%;
     }
 
     &--btn {
-      --height: 53px;
+      --height: 57px;
       min-width: 169px;
       background: #fb8f2c;
     }
